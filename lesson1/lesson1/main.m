@@ -34,7 +34,7 @@ int main(int argc, const char * argv[]) {
         printf("TASK 3: Third number: ");
         scanf("%d", &numberThree);
         
-        float average = ((float)numberOne + (float)numberTwo + (float)numberThree) / 3;
+        float average = (float)(numberOne + numberTwo + numberThree) / 3;
         
         NSLog(@"\n Calculated average: %f", average);
     }
