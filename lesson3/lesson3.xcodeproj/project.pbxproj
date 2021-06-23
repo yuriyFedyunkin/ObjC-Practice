@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		792B435B2683AC690013BCCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B435A2683AC690013BCCD /* main.m */; };
 		792B43642683B4640013BCCD /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B43632683B4640013BCCD /* Counter.m */; };
+		792B43682683BBE40013BCCD /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B43672683BBE40013BCCD /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		792B435A2683AC690013BCCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		792B43622683B4640013BCCD /* Counter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Counter.h; sourceTree = "<group>"; };
 		792B43632683B4640013BCCD /* Counter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
+		792B43662683BBE40013BCCD /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		792B43672683BBE40013BCCD /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				792B435A2683AC690013BCCD /* main.m */,
 				792B43622683B4640013BCCD /* Counter.h */,
 				792B43632683B4640013BCCD /* Counter.m */,
+				792B43662683BBE40013BCCD /* Calculator.h */,
+				792B43672683BBE40013BCCD /* Calculator.m */,
 			);
 			path = lesson3;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792B43682683BBE40013BCCD /* Calculator.m in Sources */,
 				792B43642683B4640013BCCD /* Counter.m in Sources */,
 				792B435B2683AC690013BCCD /* main.m in Sources */,
 			);
