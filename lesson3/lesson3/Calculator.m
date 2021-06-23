@@ -11,16 +11,16 @@
 
 - (NSInteger)calculate: (NSInteger)value1 with: (NSInteger)value2 perform: (Operation)operation  {
     switch (operation) {
-        case Sum:
+        case OperationSum:
             return value1 + value2;
             break;
-        case Dif:
+        case OperationDif:
             return value1 - value2;
             break;
-        case Multiplication:
+        case OperationMultiplication:
             return value1 * value2;
             break;
-        case Division:
+        case OperationDivision:
             return value1 / value2;
             break;
     }

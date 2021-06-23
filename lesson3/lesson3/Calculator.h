@@ -11,12 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Calculator : NSObject
 
-typedef enum Operation {
-    Sum,
-    Dif,
-    Multiplication,
-    Division
-} Operation;
+typedef NS_ENUM(NSUInteger, Operation) {
+    OperationSum,
+    OperationDif,
+    OperationMultiplication,
+    OperationDivision
+};
 
 - (NSInteger)calculate: (NSInteger)value1 with: (NSInteger)value2 perform: (Operation)operation;
 
