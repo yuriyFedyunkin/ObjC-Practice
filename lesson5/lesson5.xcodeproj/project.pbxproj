@@ -10,6 +10,9 @@
 		7944E944268E4DE800CDFD9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944E943268E4DE800CDFD9B /* main.m */; };
 		7944E958268E510500CDFD9B /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944E957268E510500CDFD9B /* Calculator.m */; };
 		7944E95E268E533C00CDFD9B /* TaskOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944E95D268E533C00CDFD9B /* TaskOne.m */; };
+		7944E96E268F97DC00CDFD9B /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944E96D268F97DC00CDFD9B /* Bird.m */; };
+		7944E974268F99D000CDFD9B /* Breed.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944E973268F99D000CDFD9B /* Breed.m */; };
+		7944E97A268F9AD300CDFD9B /* FlockOfBirds.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944E979268F9AD300CDFD9B /* FlockOfBirds.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,12 @@
 		7944E957268E510500CDFD9B /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		7944E95C268E533C00CDFD9B /* TaskOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskOne.h; sourceTree = "<group>"; };
 		7944E95D268E533C00CDFD9B /* TaskOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskOne.m; sourceTree = "<group>"; };
+		7944E96C268F97DC00CDFD9B /* Bird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		7944E96D268F97DC00CDFD9B /* Bird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		7944E972268F99D000CDFD9B /* Breed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Breed.h; sourceTree = "<group>"; };
+		7944E973268F99D000CDFD9B /* Breed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Breed.m; sourceTree = "<group>"; };
+		7944E978268F9AD300CDFD9B /* FlockOfBirds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlockOfBirds.h; sourceTree = "<group>"; };
+		7944E979268F9AD300CDFD9B /* FlockOfBirds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlockOfBirds.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +75,9 @@
 				7944E943268E4DE800CDFD9B /* main.m */,
 				7944E95A268E510D00CDFD9B /* Calculator */,
 				7944E960268E534200CDFD9B /* TaskOne */,
+				7944E970268F97E100CDFD9B /* Bird */,
+				7944E976268F99D700CDFD9B /* Breed */,
+				7944E97C268F9ADB00CDFD9B /* FlockOfBirds */,
 			);
 			path = lesson5;
 			sourceTree = "<group>";
@@ -86,6 +98,33 @@
 				7944E95D268E533C00CDFD9B /* TaskOne.m */,
 			);
 			path = TaskOne;
+			sourceTree = "<group>";
+		};
+		7944E970268F97E100CDFD9B /* Bird */ = {
+			isa = PBXGroup;
+			children = (
+				7944E96C268F97DC00CDFD9B /* Bird.h */,
+				7944E96D268F97DC00CDFD9B /* Bird.m */,
+			);
+			path = Bird;
+			sourceTree = "<group>";
+		};
+		7944E976268F99D700CDFD9B /* Breed */ = {
+			isa = PBXGroup;
+			children = (
+				7944E972268F99D000CDFD9B /* Breed.h */,
+				7944E973268F99D000CDFD9B /* Breed.m */,
+			);
+			path = Breed;
+			sourceTree = "<group>";
+		};
+		7944E97C268F9ADB00CDFD9B /* FlockOfBirds */ = {
+			isa = PBXGroup;
+			children = (
+				7944E978268F9AD300CDFD9B /* FlockOfBirds.h */,
+				7944E979268F9AD300CDFD9B /* FlockOfBirds.m */,
+			);
+			path = FlockOfBirds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +185,10 @@
 			files = (
 				7944E95E268E533C00CDFD9B /* TaskOne.m in Sources */,
 				7944E944268E4DE800CDFD9B /* main.m in Sources */,
+				7944E96E268F97DC00CDFD9B /* Bird.m in Sources */,
+				7944E974268F99D000CDFD9B /* Breed.m in Sources */,
 				7944E958268E510500CDFD9B /* Calculator.m in Sources */,
+				7944E97A268F9AD300CDFD9B /* FlockOfBirds.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
