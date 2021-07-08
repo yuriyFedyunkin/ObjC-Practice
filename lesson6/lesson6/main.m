@@ -11,7 +11,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        // MARK: Task 1
+        // MARK: -  Task 1
         
         Calculator *calculator = [Calculator new];
         
@@ -28,12 +28,50 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Result multiplication - %li", (long)resultMultiplication);
         NSLog(@"Result division - %li", (long)resultDivision);
         
+        NSLog(@"-------TASK 2----------");
+        // MARK: -  Task 2
+        
+        /// GCD
+        __block NSInteger resultOne;
+        __block NSInteger resultTwo;
+        
+        dispatch_queue_t globalQueueDefault = dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0);
+        dispatch_queue_t globalQueueUtility = dispatch_get_global_queue(QOS_CLASS_UTILITY, 0);
+        
+        dispatch_sync(globalQueueDefault, ^{
+            resultOne = resultMultiplication + resultDif;
+            NSLog(@"%ld", (long)resultOne);
+        });
+        
+        dispatch_async(globalQueueUtility, ^{
+            resultTwo = resultMultiplication * resultMultiplication;
+            NSLog(@"%ld", (long)resultTwo);
+        });
+        
+        dispatch_async(globalQueueDefault, ^{
+            resultTwo = resultTwo + resultDif;
+            NSLog(@"%ld", (long)resultTwo);
+        });
+        
+        
+        /// NSOperationQueue
+        NSOperationQueue *myQueue = [NSOperationQueue new];
+        NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];
+        
+        [mainQueue addBarrierBlock:^{
+            NSLog(@"------");
+        }];
+        
+        [myQueue addOperationWithBlock:^{
+            NSLog(@"Hello");
+        }];
+
+        [myQueue addOperationWithBlock:^{
+            NSLog(@"World");
+        }];
+ 
     }
+    
+    sleep(10);
     return 0;
 }
-
-/*
- 1. Попрактиковаться с применением блоков создава блоки калькулятора.
-
- 2. Добавить выполнение блоков в различные очереди: как с применением GCD, так и с помощью NSOperationQueue и вывести результат
- */
